@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="Current">
+  <!--Project was exported from assembly: C:\Program Files (x86)\Steam\steamapps\common\Gorilla Tag\BepInEx\plugins\MonoSandbox.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{71254D8B-D251-49DC-A09E-3AEA5822CED1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>MonoSandbox</AssemblyName>
+    <ApplicationVersion>1.0.0.0</ApplicationVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="netstandard" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AirStrikeManager.cs" />
+    <Compile Include="Airstrike.cs" />
+    <Compile Include="BoxManager.cs" />
+    <Compile Include="SphereManager.cs" />
+    <Compile Include="BeanManager.cs" />
+    <Compile Include="BathManager.cs" />
+    <Compile Include="CrateManager.cs" />
+    <Compile Include="CouchManager.cs" />
+    <Compile Include="Explode.cs" />
+    <Compile Include="C4Manager.cs" />
+    <Compile Include="MineDetonate.cs" />
+    <Compile Include="BombDetonate.cs" />
+    <Compile Include="FreezeManager.cs" />
+    <Compile Include="GravityManager.cs" />
+    <Compile Include="SpringManager.cs" />
+    <Compile Include="SpringLine.cs" />
+    <Compile Include="WeldManager.cs" />
+    <Compile Include="BalloonManager.cs" />
+    <Compile Include="Balloon.cs" />
+    <Compile Include="BoneSphere.cs" />
+    <Compile Include="Softbody.cs" />
+    <Compile Include="RagdollManager.cs" />
+    <Compile Include="ThrusterManager.cs" />
+    <Compile Include="ThrusterControls.cs" />
+    <Compile Include="WeaponManager.cs" />
+    <Compile Include="HammerManager.cs" />
+    <Compile Include="GrenadeManager.cs" />
+    <Compile Include="PhysGunManager.cs" />
+    <Compile Include="Bullet.cs" />
+    <Compile Include="MonoSandbox\Plugin.cs" />
+    <Compile Include="MonoSandbox\PluginInfo.cs" />
+    <Compile Include="MonoSandbox\RefCache.cs" />
+    <Compile Include="MonoSandbox\Patches\PlayerInitializePatch.cs" />
+    <Compile Include="MonoSandbox\Patches\PlayerSurfacePatch.cs" />
+    <Compile Include="MonoSandbox\Behaviours\Enemy.cs" />
+    <Compile Include="MonoSandbox\Behaviours\HapticManager.cs" />
+    <Compile Include="MonoSandbox\Behaviours\InputHandling.cs" />
+    <Compile Include="MonoSandbox\Behaviours\MyGradientKey.cs" />
+    <Compile Include="MonoSandbox\Behaviours\MyGradient.cs" />
+    <Compile Include="MonoSandbox\Behaviours\PlacementHandling.cs" />
+    <Compile Include="MonoSandbox\Behaviours\SineGunAnimation.cs" />
+    <Compile Include="MonoSandbox\Behaviours\SineScaleOut.cs" />
+    <Compile Include="MonoSandbox\Behaviours\UI\Button.cs" />
+    <Compile Include="MonoSandbox\Behaviours\UI\PageButton.cs" />
+    <Compile Include="MonoSandbox\Behaviours\UI\SandboxMenu.cs" />
+    <Compile Include="MonoSandbox\Behaviours\Tools\LimitVelocity.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MonoSandbox\Assets.sandboxbundle" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>
